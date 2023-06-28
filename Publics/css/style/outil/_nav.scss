@@ -1,0 +1,109 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    .logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img {
+            margin: 5px;
+        }
+    }
+    .lien_nav{
+        display: flex;
+        flex-direction: row;
+        font-family: 'Beyno';
+        li{
+            display: inline-block;
+            margin: 5%;
+            a{
+                text-decoration: none;
+                font-family: "Beyno";
+                font-size: 20px;
+                font-style: regular;
+                color: $white;
+                &:hover {
+                    text-decoration: underline;
+                    color: $purple;
+                }
+            }
+        }
+        .lien_active{
+            text-decoration: underline;
+            color: $purple;
+        }
+    }
+}
+
+/* ####################   Responsive du nav ##########################*/
+@media (max-width: 800px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        .logo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            img {
+                margin: 5px;
+            }
+        }
+        .lien_nav{
+            display: flex;
+            flex-direction: row;
+            li{
+                display: inline-block;
+                margin: 5%;
+                a{
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-style: regular;
+                }
+            }
+        }
+    }
+}
+
+/*#################### Ligne ################################*/
+.ligne_logo{
+    top: 0;
+    left: 2.5%;
+    height: 60vh;
+    display: flex;
+    position: fixed;
+    z-index: 1002;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 4px solid $purple;
+    border-bottom: 0;
+    border-top: 0;
+    border-right: 0;
+    .ligne{
+        height: 60vh;
+        margin-left: 15px;
+        border: 2px solid $purple;
+    }
+    .icon_social{
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .ico{
+            width: 20px;
+            height: 20px;
+            color: $white_hover2;
+            margin: 5px 10px;
+            img{
+                margin: 5px 10px;
+            }
+        }
+    }
+}

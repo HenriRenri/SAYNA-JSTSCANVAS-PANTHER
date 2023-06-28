@@ -1,0 +1,542 @@
+@font-face {
+  font-family: "Panthera";
+  src: url(../../../fonts/Panthera_Regular.ttf);
+}
+@font-face {
+  font-family: "Beyno";
+  src: url(../../../fonts/BEYNO.otf);
+}
+@font-face {
+  font-family: "Wakanda Forever";
+  src: url(../../../fonts/Wakanda_Forever_Regular.ttf);
+}
+@font-face {
+  font-family: "Cantarell";
+  src: url(../../../fonts/Cantarell_Regular.ttf);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100px;
+  margin: auto;
+}
+nav .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav .logo img {
+  margin: 5px;
+}
+nav .lien_nav {
+  display: flex;
+  flex-direction: row;
+  font-family: "Beyno";
+}
+nav .lien_nav li {
+  display: inline-block;
+  margin: 5%;
+}
+nav .lien_nav li a {
+  text-decoration: none;
+  font-family: "Beyno";
+  font-size: 20px;
+  font-style: regular;
+  color: #ffffff;
+}
+nav .lien_nav li a:hover {
+  text-decoration: underline;
+  color: rgba(223, 153, 242, 0.9803921569);
+}
+nav .lien_nav .lien_active {
+  text-decoration: underline;
+  color: rgba(223, 153, 242, 0.9803921569);
+}
+
+/* ####################   Responsive du nav ##########################*/
+@media (max-width: 800px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+  nav .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  nav .logo img {
+    margin: 5px;
+  }
+  nav .lien_nav {
+    display: flex;
+    flex-direction: row;
+  }
+  nav .lien_nav li {
+    display: inline-block;
+    margin: 5%;
+  }
+  nav .lien_nav li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-style: regular;
+  }
+}
+/*#################### Ligne ################################*/
+.ligne_logo {
+  top: 0;
+  left: 2.5%;
+  height: 60vh;
+  display: flex;
+  position: fixed;
+  z-index: 1002;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 4px solid rgba(223, 153, 242, 0.9803921569);
+  border-bottom: 0;
+  border-top: 0;
+  border-right: 0;
+}
+.ligne_logo .ligne {
+  height: 60vh;
+  margin-left: 15px;
+  border: 2px solid rgba(223, 153, 242, 0.9803921569);
+}
+.ligne_logo .icon_social {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.ligne_logo .icon_social .ico {
+  width: 20px;
+  height: 20px;
+  color: rgba(255, 255, 255, 0.7254901961);
+  margin: 5px 10px;
+}
+.ligne_logo .icon_social .ico img {
+  margin: 5px 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
+@keyframes textmove {
+  from {
+    right: 600px;
+  }
+  to {
+    right: 0px;
+  }
+}
+p, h1, h2, h3, h4, h5 {
+  position: relative;
+  animation-name: textmove;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+body {
+  background: radial-gradient(126.67% 350.28% at -21.35% 0%, #11213F 0%, #0b0b0b 39.1%, rgba(2, 23, 64, 0.837641) 94.57%, #021740 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: "Panthera";
+  font-size: 68px;
+  color: rgba(223, 153, 242, 0.9803921569);
+}
+
+h2 {
+  font-family: "Beyno";
+  color: rgba(223, 153, 242, 0.9803921569);
+  font-size: 36px;
+}
+
+p {
+  font-family: "Cantarell";
+  font-size: 16px;
+  width: 60%;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.image:hover,
+.foot:hover {
+  filter: brightness(0) saturate(100%) invert(75%) sepia(61%) saturate(1896%) hue-rotate(212deg) brightness(100%) contrast(90%);
+}
+
+.ico:hover,
+.ligne_logo img:hover {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(89%) saturate(0%) hue-rotate(235deg) brightness(104%) contrast(101%);
+}
+
+#cursor {
+  position: relative;
+  display: block;
+  height: 30px;
+}
+
+footer {
+  background: linear-gradient(to bottom, #3d2da6, #021740);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 0% 0% 7%;
+}
+footer .footer_img {
+  height: 385px;
+  width: 330px;
+  background-image: url(../../../image/Logo/Group\ 2052.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0% 0% 5% 5%;
+  opacity: 0.7;
+  z-index: 87;
+}
+footer .foot {
+  margin-bottom: 20%;
+  z-index: 85;
+}
+footer .foot img:hover {
+  transform: scale(1.1);
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  height: 395px;
+  margin-left: 1%;
+}
+footer .container .table {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+footer .container .lien_page {
+  display: block;
+  margin-bottom: 10px;
+}
+footer .container .lien_page a {
+  text-decoration: none;
+  font-family: "cantarell";
+  font-size: 16px;
+  color: #ffffff;
+}
+footer .container .lien_page a:hover {
+  text-decoration: underline;
+}
+footer .container h5 {
+  text-transform: uppercase;
+  font-family: "cantarell";
+  font-size: 22px;
+  color: #ffffff;
+  letter-spacing: 0.28em;
+  margin-bottom: 25px;
+}
+footer .container .icon {
+  align-items: center;
+  margin: 4%;
+}
+footer .container .icon .icot {
+  padding: 5% 9% 2% 0%;
+}
+footer .container .icon img:hover {
+  transform: scale(1.1);
+  opacity: 0.4;
+}
+footer .container .row_2 {
+  display: flex;
+  flex-direction: column;
+  font-family: "cantarell";
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 100px;
+  align-items: first baseline;
+}
+footer .container .row_2 p {
+  width: 100%;
+}
+footer .container .row_2 p span {
+  font-family: " sans-serif";
+  font-size: 12px;
+  padding: 0% 1% 0% 1%;
+  list-style-type: circle;
+}
+
+@media (max-width: 800px) {
+  footer {
+    display: block;
+    flex-direction: row;
+    padding: 2% 0% 3% 4%;
+  }
+  footer .footer_img {
+    height: 235px;
+    width: 180px;
+    background-image: url(../../../image/Logo/Group\ 2052.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 27% 0% 5% 5%;
+    opacity: 0.7;
+    z-index: 87;
+  }
+  footer .foot {
+    width: 100px;
+    margin-bottom: 15%;
+    z-index: 85;
+  }
+  footer .foot img:hover {
+    transform: scale(1.1);
+  }
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+  }
+  footer .container .table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  footer .container .lien_page {
+    display: block;
+    margin-bottom: 2%;
+  }
+  footer .container .lien_page a {
+    text-decoration: none;
+    font-family: "cantarell";
+    font-size: 16px;
+    color: #ffffff;
+  }
+  footer .container .lien_page a:hover {
+    text-decoration: underline;
+  }
+  footer .container h5 {
+    left: 6%;
+    text-transform: uppercase;
+    font-family: "cantarell";
+    font-size: 22px;
+    color: #ffffff;
+    letter-spacing: 0.28em;
+    margin-bottom: 25px;
+  }
+  footer .container .icon {
+    align-items: center;
+    margin: 4%;
+  }
+  footer .container .icon .icot {
+    padding: 5% 2% 2% 0%;
+  }
+  footer .container .icon img:hover {
+    transform: scale(1.1);
+    opacity: 0.4;
+  }
+  footer .container .row_2 {
+    display: flex;
+    flex-direction: column;
+    font-family: "cantarell";
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 100px;
+    align-items: first baseline;
+  }
+  footer .container .row_2 p {
+    width: 140%;
+    left: -60%;
+    padding: 4% 0% 0% 0%;
+  }
+  footer .container .row_2 p span {
+    font-family: " sans-serif";
+    font-size: 12px;
+  }
+}
+/*  ############################  Desing su section Black  ###################################*/
+#Black {
+  background-image: url("../../../image/Wakanda/Pantherwakanda1.png");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10vw;
+}
+#Black .Back_text {
+  width: 80%;
+  padding-top: 4%;
+  margin-left: 10%;
+}
+#Black h1 {
+  padding: 0% 2% 0% 0%;
+  font-family: "beyno";
+  color: #9E91B7;
+  font-size: 43px;
+}
+#Black h2 {
+  font-family: "Wakanda Forever";
+  color: #9E91B7;
+  padding: 2% 0% 0% 0%;
+}
+#Black p {
+  padding: 2% 0% 0% 0%;
+}
+#Black a {
+  text-decoration: underline;
+}
+
+/*  ############################  Responsive du section Black  ###################################*/
+@media (max-width: 800px) {
+  #Black {
+    background-image: url("../../../image/Wakanda/Pantherwakanda1.png");
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10vw;
+  }
+  #Black .Back_text {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #Black p {
+    width: 85%;
+    padding: 2% 0% 0% 4%;
+  }
+}
+/*  ############################  Desing du section History  ###################################*/
+#History {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: relative;
+  background-image: url("../../../image/Wakanda/Pantherwakanda2.png");
+  background-size: 100%;
+  background-position: 8vw -4vw;
+  background-repeat: no-repeat;
+  z-index: 0;
+  padding-bottom: 5%;
+}
+#History h3 {
+  font-family: "Beyno", sans-serif, serif;
+  color: #9E91B7;
+  font-size: 26px;
+}
+#History .globe {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  flex-direction: row;
+  padding: 13% 0% 0% 8%;
+  text-align: justify;
+  position: relative;
+}
+#History .globe p {
+  padding-top: 5%;
+  width: 100%;
+}
+#History .globe .history1 {
+  height: auto;
+  width: 100%;
+}
+#History .globe .history1 video {
+  width: 520px;
+  height: 360px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#History .globe .history2 {
+  height: auto;
+  width: 100%;
+}
+#History .globe .history2 #waka {
+  width: 649px;
+  height: 362px;
+  background-image: url("../../../image/Wakanda/Pantherwakanda3.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  right: 69px;
+  margin-right: -34px;
+}
+
+/*  ############################  Responsive du section History  ###################################*/
+@media (max-width: 800px) {
+  #History {
+    width: auto;
+    height: auto;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    padding-bottom: 5%;
+  }
+  #History h3 {
+    margin-left: 6%;
+    font-family: "Beyno", sans-serif, serif;
+    color: #9E91B7;
+    font-size: 22px;
+  }
+  #History .globe {
+    display: block;
+    padding: 13% 0% 0% 8%;
+    text-align: justify;
+    position: relative;
+  }
+  #History .globe p {
+    padding-top: 5%;
+    width: 120%;
+  }
+  #History .globe .history1 {
+    height: auto;
+    width: 80vh;
+  }
+  #History .globe .history1 video {
+    width: 520px;
+    height: 360px;
+    margin-left: 5%;
+    margin-bottom: 2%;
+  }
+  #History .globe .history2 {
+    height: auto;
+    width: 100%;
+  }
+  #History .globe .history2 #waka {
+    width: 324px;
+    height: 181px;
+    background-image: url("../../../image/Wakanda/Pantherwakanda3.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    right: 69px;
+    margin-right: -34px;
+  }
+}/*# sourceMappingURL=wakanda.css.map */

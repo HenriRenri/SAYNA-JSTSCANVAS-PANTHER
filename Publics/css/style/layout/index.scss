@@ -1,0 +1,553 @@
+@import '../outil/config_general';
+
+.box_popup{
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    z-index: 1005;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: center;
+    background: linear-gradient(to bottom, 
+    $bleu_hover 10%, $bleu_deep2 100%);
+    .popup {
+        padding-top: 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 80%;
+        border-radius: 25px;
+        background: linear-gradient(to bottom, 
+        $grey 30%, $bleu_hover 100%);
+        p {
+            text-transform: uppercase;
+            text-align: center;
+            font-family: "cantarell";
+            font-size: 20px;
+            color: aqua;
+          }
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: $purple;
+          background-color: $white_hover1;
+          border-radius: 25px;
+          padding: 15px 20px;
+          margin: 50px 0px;
+          &:hover{
+            box-shadow: 0px 0px 20px 5px $pink1;
+          }
+        }
+        .chrono {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            #hour {
+                display: block;
+                text-align: center;
+              }
+          }
+    }
+}
+/* ################################## Responsive du Popup ########################## */
+@media (max-width: 800px) {
+    .box_popup{
+        top:10%;
+        left: 13%;
+        width: 75%;
+        height: 40%;
+        z-index: 1005;
+        display: flex;
+        position: fixed;
+        align-items: center;
+        border-radius: 25px;
+        justify-content: center;
+        background: linear-gradient(to bottom, 
+        $bleu_hover 10%, $bleu_deep2 100%);
+        .popup {
+            padding-top: 8%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            height: 80%;
+            border-radius: 25px;
+            background: linear-gradient(to bottom, 
+            $grey 30%, $bleu_hover 100%);
+            p {
+                top: 15%;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 14px;
+                color: aqua;
+              }
+            a {
+              text-decoration: none;
+              text-transform: uppercase;
+              color: $purple;
+              background-color: $white_hover1;
+              border-radius: 25px;
+              padding: 15px 20px;
+              margin: 50px 0px;
+              &:hover{
+                box-shadow: 0px 0px 20px 5px $pink1;
+              }
+            }
+            .chrono {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                #hour {
+                    display: block;
+                    text-align: center;
+                  }
+              }
+        }
+    }
+}
+/* #################### Desing du section Black_Panther #########################*/
+header{
+    height: 119vh;
+    width: auto;
+    background-image: url(../../../image/Aceuill/Pantherhome1.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 38vw 10vw;
+    padding: 0 4%;
+    #Black_Panther{
+        width: 60%;
+        padding-top: 8%;
+        margin-left: 6%;
+        h1{
+            margin-bottom: 10px;
+        }
+        h2{
+            padding-top: 2%;
+        }
+        a{
+            text-decoration: underline;
+        }
+    }
+}
+/*################ Responsive Blac_Panther#######################""*/
+@media (max-width: 800px){
+    header{
+        height: 90vh;
+        width: auto;
+        background-image: url(../../../image/Aceuill/Pantherhome1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 5vw 3vw;
+        padding: 0 2%;
+        #Black_Panther{
+            width: 95%;
+            padding-top: 2%;
+            margin-left: 10%;
+            h1{
+                font-size: 25px;
+                margin-bottom: 5px;
+            }
+            h2{
+                font-size: 20px;
+                padding-top: 2%;
+            }
+            p{
+                width: 95%;
+                font-size: 16px;
+            }
+            a{
+                text-decoration: underline;
+            }
+        }
+    }
+    
+}
+/*  ####################### Desing du section Acteurs ################################*/
+.slider{
+    position: relative;
+    margin-left: 6.8%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    left: 1.5%;
+}
+    .rond{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $bleu;
+        border-radius: 50px;
+        position: absolute;
+        left: 95%;
+        top: 45%;
+        z-index: 4;
+        font-size: 29px;
+        color: $white;
+        border: none;
+        &:hover{
+            box-shadow: 0px 0px 15px 10px $white_hover2;
+        }
+    }
+    .conteneur_slider{
+        display: flex;
+        flex-direction: row;
+        transition: 800ms;
+        .slide{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            position: relative;
+            background-color: $bleu_deep1;
+            width: 520px;
+            height: 280px;
+            .leftcard img{
+                width: 240px;
+                height: 280px;
+                left: 8%;
+            }
+            .zoom{
+                position: relative;
+                height: 120% !important;
+                left: 8%;
+                bottom: 10%;
+            }
+            .Rightcard{
+                padding-top: 15px;
+                width: 260px;
+                h2{
+                    margin-left: 13%;
+                }
+                p {
+                    width: 80%;
+                    margin-left: 18%;
+                    text-align: justify;
+                    color: $white;
+                    font-size: 12px;
+                }
+                a {
+                    color: $white;
+                    font-size: 14px;
+                    margin-left: 18%;
+                    padding-top: 1%;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+/*#######################  Responsive du sections Acteurs  #########################*/
+@media (max-width: 800px) {
+    .slider{
+        position: relative;
+        margin-left: 6.9%;
+        height: 340px;
+        overflow: hidden;
+        display: flex;
+        .rond{
+            background-color: $bleu_deep1;
+            left: 90%;
+        }
+    }
+}
+/*############################### Desing section Prince ##################################*/
+#Prince{
+    display: flex;
+    flex-direction: row;
+    .text_prince{
+        padding-left: 6%;
+        margin-left: 4%;
+        width: 88%;
+    }
+    h2 {
+        padding-top: 5%;
+        font-family: "Beyno";
+        font-size: 22px;
+        color: $grey;
+    }
+    p {
+        width: 85%;
+        padding-top: 2%;
+        text-align: justify;
+        z-index: 100;
+    }
+    .style {
+        font-size: .875rem;
+    }
+    .description {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+        #tchalla {
+            position: absolute;
+            top: 6%;
+            right: 25%;
+            }
+        .description_text {
+            background-color: $white;
+            width: 85vh;
+            height: auto;
+            border-radius: 10px;
+            margin: 125% 0% 0% -35%;
+            padding-top: 40%;
+            h3 {
+                font-family: "Cantarell";
+                font-size: 26px;
+                color: $black_page;
+                text-align: center;
+            }
+            .button_fiche {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 4%;
+                button {
+                    background-color: $bleu_deep1;
+                    padding: 1%;
+                    border: none;
+                    border-radius: 0.5rem;
+                    color: $white;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    font-family: "Cantarell";
+                    font-size: 16px;
+                }
+            }
+            .ligne {
+                display: flex;
+                flex-direction: column;
+                padding: 7%;
+                h4{
+                    color: $black_page;
+                    font-size: 0.9rem;
+                    text-align: left;
+                    padding-top: 0.5rem;
+                    span{
+                        font-size: medium;
+                    }
+                }
+            }
+        }
+        .panther {
+            right: 1%;
+            padding-top: 90%;
+            position: absolute;
+        }
+    }
+}
+/* ########################" Responsive du section Prince ################################"" */
+@media (max-width: 800px) {
+   #Prince{
+    .Prince{
+        display: block;
+        width: 70vh;
+        .text_prince{
+            padding-left: 16%;
+        }
+        h2 {
+            padding-top: 5%;
+            font-family: "Beyno";
+            font-size: 22px;
+            color: $grey;
+            width: 80vh;
+        }
+        p {
+            width: 90vh;
+            padding-top: 2%;
+            text-align: justify;
+            z-index: 100;
+        }
+        .style {
+            font-size: .875rem;
+        }
+    }
+    .description {
+        width: 95%;
+        height: auto;
+        left: 90%;
+        .description_text {
+            background-color: $white;
+            width: 85vh;
+            height: auto;
+            border-radius: 10px;
+            padding-top: 10%;
+            #tchalla {
+                position: relative;
+                bottom: 89%;
+                left: 1%;
+                }
+            h3 {
+                font-family: "Cantarell";
+                font-size: 26px;
+                color: $black_page;
+                text-align: center;
+            }
+            .button_fiche {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 4%;
+                button {
+                    background-color: $bleu_deep1;
+                    padding: 1%;
+                    border: none;
+                    border-radius: 0.5rem;
+                    color: $white;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    font-family: "Cantarell";
+                    font-size: 16px;
+                }
+            }
+            .ligne {
+                display: flex;
+                flex-direction: column;
+                padding: 7%;
+                h4{
+                    color: $black_page;
+                    font-size: 0.9rem;
+                    text-align: left;
+                    padding-top: 0.5rem;
+                    span{
+                        font-size: medium;
+                    }
+                }
+            }
+        }
+        .panther {
+            right: 1%;
+            padding-top: 90%;
+            position: relative;
+        }
+    }
+}
+/* ################################## Desing Formulair ###################################*/
+.form{
+    background-image: url("../../../image/Aceuill/Pantherhome4.png");
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    .background_form {
+        margin-top: 10%;
+        padding: 3% 0% 3% 0%;
+        width: 60%;
+        text-align: center;
+        background-image: linear-gradient(180deg, $white, $pink);
+        border-radius: 100px;
+        margin-bottom: 5%;
+        p {
+            color: $bleu_deep1;
+            padding-bottom: 0.5rem;
+            text-align: center;
+            margin-left: 20%;
+        }
+        h1 {
+            font-family: "Cantarell";
+            color: $bleu_deep1;
+            font-size: 2.5rem;
+            padding-bottom: 0.5rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            input {
+                width: 520px;
+                height: 56px;
+                background: transparent;
+                border-radius: 38px;
+                padding-left: 1rem;
+                margin-top: 2rem;
+                border: solid 1px $bleu_deep1;
+            }
+            textarea {
+                height: 200px;
+                width: 520px;
+                background: none;
+                border-radius: 38px;
+                padding-left: 1rem;
+                margin-top: 2rem;
+                padding-top: 1.5rem;
+                border: solid 1px $bleu_deep1;
+            }
+            button {
+                width: 174px;
+                height: 54px;
+                border: none;
+                border-radius: 38px;
+                background-color: $pink1;
+                margin-top: 30px;
+                z-index: 10;
+                  &:hover{
+                    box-shadow: 0px 0px 20px 5px $pink1;
+                  }
+            }
+        }
+    }
+   }
+}
+/* ################################## Responsive Formulair ###################################*/
+@media (max-width: 800px) {
+    .form{
+        .background_form {
+            margin-top: 50%;
+            width: 90%;
+            text-align: center;
+            background-image: linear-gradient(180deg, $white, $pink);
+            border-radius: 50px;
+            margin-bottom: 5%;
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                input {
+                    width: 520px;
+                    height: 56px;
+                    background: transparent;
+                    border-radius: 38px;
+                    padding-left: 1rem;
+                    margin-top: 2rem;
+                    border: solid 1px $bleu_deep1;
+                }
+                textarea {
+                    height: 200px;
+                    width: 520px;
+                    background: none;
+                    border-radius: 38px;
+                    padding-left: 1rem;
+                    margin-top: 2rem;
+                    padding-top: 1.5rem;
+                    border: solid 1px $bleu_deep1;
+                }
+                button {
+                    width: 174px;
+                    height: 54px;
+                    border: none;
+                    border-radius: 38px;
+                    background-color: $pink1;
+                    margin-top: 30px;
+                    z-index: 10;
+                      &:hover{
+                        box-shadow: 0px 0px 20px 5px $bleu_deep1;
+                      }
+                }
+            }
+        }
+    }
+}

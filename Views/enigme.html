@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enigme</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Publics/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../Publics/css/bootstrap/bootstrap.min.css.map">
+    <link rel="stylesheet" href="../Publics/css/style/layout/enigme.css">
+</head>
+<!-- <img src="../Publics/image/Logo/logo_souris_BP1_blanc.png" alt="" id="curseur"> -->
+        <!-- popup box -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 box-popup" id="box-popup">
+                <div class="popup">
+                    <p id="titre_popup">félicitation vous avez réléver le défie ! </p>
+                    <a id="btn-popup"> Revenir à l'accueil</a>
+                    <div class="chrono" id="chrono">
+                        <img src="../Publics/image/Enigme/figma_logo.svg" alt="figma">
+                        <p>Coming soon <span id="hour">00:00:04</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin -->
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav>
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="../Publics/image/Logo/icon_SAYNA.png" alt="logo SAYNA" class="image"/>
+                            </a>
+                            <a href="index.html">
+                                <img src="../Publics/image/Logo/icon_x.png" alt="logo X" class="cross image"/>
+                            </a>
+                            <a href="index.html">
+                                <img src="../Publics/image/Logo/icon_MARVEL.png" alt="logo MARVEL" class="image"/>
+                            </a>
+                        </div>
+                        <ul class="lien_nav">
+                            <li><a href="../index.html">ACCUEIL</a></li>
+                            <li><a href="./wakanda.htm">WAKANDA</a></li>
+                            <li><a href="./Views/enigme.html" class="lien_active">ENIGME</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <section class="ligne">
+            <div class="ligne_logo">
+                <div class="ligne"></div>
+                <div class="icon_social">
+                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html" target="_blank"><i class="fab ico fa-facebook"></i> </a>
+                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html" target="_blank"><i class="fab ico fa-instagram"></i></a>
+                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html" target="_blank"><i class="fab ico fa-twitter"></i></a>
+                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html" target="_blank"><img class="ico" src="../Publics/image/Logo/icon_tik_tok.png" alt="logo tikto"></a>
+                </div>
+            </div>
+        </section>
+    <header>
+        <main>
+            <!-- ############################### Section Enigme ################### -->
+            <div id="BG">
+                <section id="Dora">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 container">
+                                <h1>Releve le defi <br>des dora milaje</h1>
+                                <img class="image_1" src="../Publics/image/Enigme/Pantherenigme2.png" alt="">
+                                <img class="image_2" src="../Publics/image/Enigme/Pantherenigme3.png" alt="">
+                                <img class="image_3" src="../Publics/image/Enigme/Pantherenigme4.png" alt="">
+                                <p>
+                                    Les Dora Milaje sont de farouches guerrières d’élite. Elles constituent la garde
+                                    rapprochée du Roi en personne et ont de nombreuses occasions de lui sauver la vie.
+                                    Leur Générale, Okoyé est également la dirigeante des forces armées et des
+                                    renseignements wakandais. <br><br>
+                                    La réussite de cette évaluation ne dépend pas de la chance mais bel et bien de
+                                    l’entrainement que tu as suivi jusqu’ici ainsi que de ta détermination. Relève ce défi et
+                                    montre-nous que tu es capable de porter les valeurs du Black Panther et du Wakanda !
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- ###################### Section Enigme ######################"" -->
+            <section id="enigme">
+                <div class="main-enigme">
+                    <h2 class="entete" id="number_enigme"> ENIGME NUMERO i</h2>
+                    <div class="content-enigme">
+                        <div class="transcription">
+                            <p id="enonce">
+                                Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais, et apprend par la même occasion la première valeur d’ une Dora Milaje!
+                            </p>
+                            <p id="enigme-text">
+                                <span class="panthera-letter"> " SI JE SUIS FIDELE C’EST A CE TRONE PEU IMPORTE QUI MONTE DESSUS "</span>
+                            </p>
+                            <form action="" id="enigme-form">
+                                <label for="reponse">Alors, as tu la réponse ?</label> <br>
+                                <input type="text" name="reponse" id="reponse" placeholder="Réponse"> <br>
+                                <input type="submit" value="ENVOYER" class="btn-form btn-enigme">
+                            </form>
+                        </div>
+                        <div class="info-enigme">
+                            <p>
+                                <span class="titre-info">Le savais tu ? </span>
+                                <p id="a_savoir">
+                                    <span>Voici la transicription de l’alphabet :</span> <br>
+                                    <span class="alphabet">
+                                        A = <span> A </span> ; B = <span> B </span>; C = <span> C </span> ; D = <span> D </span> ; E = <span> E </span> ; F = <span> F </span> ; G = <span> G </span> ; H = <span> H </span> ;
+                                    I = <span> I </span> ; J = <span> J </span> ; K = <span> K </span> ; L = <span> L </span> ; M = <span> M </span> ; N = <span> N </span> ; O = <span> O </span> ; P = <span> P </span> ; Q = <span> Q </span> ; R = <span> R </span>                                ; S = <span> S </span> ; T =<span> T </span>; U = <span> U </span> ; W = <span> W </span> ; X = <span> X </span> ; Y = <span> Y </span> ; Z = <span> Z </span>
+                                    </span>
+                                </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer_img">
+                                <a href="./Views/Wakanda.html">
+                                    <img src="../Publics/image/Logo/icon_SaynaXMarvel.png" alt="logo SAYNA & MARVEL" class="foot">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="container">
+                                <div class=" row table">
+                                    <div class="col-md-4">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="lien_page">
+                                                    <h5>Pages</h5>
+                                                    <ul>
+                                                        <a href=""><li><span>à</span> propos</li></a>
+                                                        <a href="./Views/wakanda.htm"><li>Wakanda</li></a>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="social">
+                                                    <h5>retrouvez nous</h5>
+                                                    <div class="icon">
+                                                        <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                                                            <img class="icot facebook" src="../Publics/image/Logo/icon_facebook_footer.png" alt="Facebook">
+                                                        </a>
+                                                        <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                                                            <img class="icot Twiter" src="../Publics/image/Logo/icon_twitter_footer.png" alt="Twiter">
+                                                        </a>
+                                                        <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                                                            <img class="icot Instagram" src="../Publics/image/Logo/icon_instagram_footer.png" alt="Instagram">
+                                                        </a>
+                                                        <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                                                            <img class="icot Tik_Tok" src="../Publics/image/Logo/icon_ti_tok_footer.png" alt=" Tik_Tok">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row_2">
+                                    <p>
+                                        2022 Tous droits réservés <span>
+                                        </span>. Conditions d’utilisation</span>
+                                        . Politique de confidentialité <span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../Publics/js/main/jquery.js"></script>
+    <script src="../Publics/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../Publics/js/bootstrap/bootstrap.min.js.map"></script>
+    <script src="../Publics/js/icons/all.js"></script>
+    <script src="../Publics/js/main/main.js"></script>
+    <!-- <script src="../Publics/js/main/wakanda.js"></script> -->
+    <script src="../Publics/js/main/enigme.js"></script>
+</body>
+</html>

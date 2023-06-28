@@ -1,0 +1,103 @@
+@import './police';
+@import './typo';
+@import'./nav';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // animation-name: fade-in;
+    // animation-duration: 3s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes textmove {
+    from {right: 600px;}
+    to {right: 0px;}
+}
+
+p, h1, h2, h3, h4, h5 {
+    position: relative;
+    animation-name: textmove;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+body{
+    background: radial-gradient(126.67% 350.28% at -21.35% 0%, 
+    $black_page 0%, 
+    $black_page_1 39.1%, 
+    rgba(2, 23, 64, 0.837641) 94.57%, 
+    $black_page_2 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+}
+
+h1{
+    font-family: 'Panthera';
+    font-size: 68px;
+    color: $purple;
+
+}
+
+h2{
+    font-family: "Beyno";
+    color: $purple;
+    font-size: 36px;
+}
+
+p{
+    font-family: 'Cantarell';
+    font-size: 16px;
+    width: 60%;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+.image:hover,
+.foot:hover {
+    filter: brightness(0) 
+     saturate(100%) 
+     invert(75%) 
+     sepia(61%) 
+     saturate(1896%) 
+     hue-rotate(212deg) 
+     brightness(100%) 
+     contrast(90%);
+}
+.ico:hover,
+.ligne_logo img:hover{
+    filter: brightness(0)
+   saturate(100%)
+   invert(100%)
+   sepia(89%)
+   saturate(0%) 
+   hue-rotate(235deg) 
+   brightness(104%) 
+   contrast(101%);
+}
+
+#cursor {
+    position: relative;
+    display: block;
+    height: 30px;
+}
+@import './footer' ;

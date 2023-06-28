@@ -1,0 +1,157 @@
+@import '../outil/config_general';
+/*  ############################  Desing su section Black  ###################################*/
+#Black{
+    background-image: url("../../../image/Wakanda/Pantherwakanda1.png");
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10vw;
+    .Back_text{
+        width: 80%;
+        padding-top: 4%;
+        margin-left: 10%;
+    }
+    h1{
+        padding: 0% 2% 0% 0%;
+        font-family: "beyno";
+        color: $grey;
+        font-size: 43px;
+    }
+    h2{
+        font-family: "Wakanda Forever";
+        color: $grey;
+        padding: 2% 0% 0% 0%;
+    }
+    p{
+        padding: 2% 0% 0% 0%;
+    }
+    a{
+        text-decoration: underline;
+    }
+}
+/*  ############################  Responsive du section Black  ###################################*/
+@media (max-width: 800px) {
+    #Black{
+        background-image: url("../../../image/Wakanda/Pantherwakanda1.png");
+        height: 45vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 10vw;
+        .Back_text{
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        p{
+            width: 85%;
+            padding: 2% 0% 0% 4%;
+        }
+    }
+}
+/*  ############################  Desing du section History  ###################################*/
+#History{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: relative;
+    background-image: url("../../../image/Wakanda/Pantherwakanda2.png");
+    background-size: 100%;
+    background-position: 8vw -4vw;
+    background-repeat: no-repeat;
+    z-index: 0;
+    padding-bottom: 5%;
+    h3{
+        font-family: "Beyno", sans-serif, serif;
+        color: $grey;
+        font-size: 26px;
+    }
+    
+    .globe{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        flex-direction: row;
+        padding: 13% 0% 0% 8%;
+        text-align: justify;
+        position: relative;
+        p{
+            padding-top: 5%;
+            width: 100%;
+        }
+        .history1{
+            height: auto;
+            width: 100%;
+            video {
+                width: 520px;
+                height: 360px;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+        .history2{
+            height: auto;
+            width: 100%;
+            #waka{
+                width: 649px;
+                height: 362px;
+                background-image: url("../../../image/Wakanda/Pantherwakanda3.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                position: relative;
+                right: 69px;
+                margin-right: -34px;
+            }
+        }
+    }
+}
+/*  ############################  Responsive du section History  ###################################*/
+@media (max-width: 800px) {
+    #History{
+        width: auto;
+        height: auto;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        padding-bottom: 5%;
+        h3{
+            margin-left: 6%;
+            font-family: "Beyno", sans-serif, serif;
+            color: $grey;
+            font-size: 22px;
+        }
+        
+        .globe{
+            display: block;
+            padding: 13% 0% 0% 8%;
+            text-align: justify;
+            position: relative;
+            p{
+                padding-top: 5%;
+                width: 120%;
+            }
+            .history1{
+                height: auto;
+                width: 80vh;
+                video {
+                    width: 520px;
+                    height: 360px;
+                    margin-left: 5%;
+                    margin-bottom: 2%;
+                }
+            }
+            .history2{
+                height: auto;
+                width: 100%;
+                #waka{
+                    width: 324px;
+                    height: 181px;
+                    background-image: url("../../../image/Wakanda/Pantherwakanda3.png");
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    position: relative;
+                    right: 69px;
+                    margin-right: -34px;
+                }
+            }
+        }
+    }
+}

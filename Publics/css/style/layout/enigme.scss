@@ -1,0 +1,285 @@
+@import '../outil/config_general';
+#curseur {
+    position: relative;
+    display: block;
+    width: 3rem;
+    height: 4.5rem;
+}
+/* #################### Desing du section Dora ###########################*/
+#BG{
+    height: 120vh;
+    display: flex;
+    background-image: url("../../../image/Enigme/Pantherenigme1.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: -2vw -15vw;
+    margin-bottom: 5%;
+
+    #Dora{
+        .container{
+            margin-top: 16%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            h1{
+                font-family: 'Beyno';
+                font-size: 43px;
+                right: 6%;
+            }
+            img{
+                position: relative;
+            }
+            .image_1{
+                bottom: 4%;
+                width: 43rem;
+                height: 44rem;
+            }
+            .image_2{
+                right: 25%;
+                bottom: 31%;
+            }
+            .image_3{
+                left: 1%;
+                width: 46rem;
+                bottom: 33.5%;
+            }
+            p{
+                right: 7.5%;
+                bottom: 54%;
+                width: 35%;
+                font-size: 12px;
+                text-align: justify;
+            }
+        }
+    }
+}
+/* #################### Responsive du section Dora ###########################*/
+@media (max-width: 800px) {
+    #BG{
+        height: 90vh;
+        display: flex;
+        background-image: url("../../../image/Enigme/Pantherenigme1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 5%;
+        #Dora{
+            .container{
+                margin-top: 16%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h1{
+                    font-family: 'Beyno';
+                    font-size: 43px;
+                    right: 6%;
+                }
+                img{
+                    position: relative;
+                }
+                .image_1{
+                    bottom: 4%;
+                    width: 43rem;
+                    height: 44rem;
+                }
+                .image_2{
+                    right: 3%;
+                    bottom: 31%;
+                }
+                .image_3{
+                    left: 1%;
+                    width: 46rem;
+                    bottom: 33.5%;
+                }
+                p{
+                    left: 2%;
+                    bottom: 54%;
+                    width: 85%;
+                    font-size: 12px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+p,
+label {
+    font-size: 14px;
+    margin: 20px 0px;
+    color: $white;
+}
+/*####################" Desing du section Enigme ##############################"*/
+.main-enigme {
+    margin-left: 15%;
+    .entete {
+        text-decoration: underline;
+        letter-spacing: 0.25em;
+        line-height: 50px;
+    }
+    .content-enigme {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 150px;
+        .info-enigme {
+            background-image: url("../../../image/Enigme/Pantherenigme2.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 385px;
+            width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p {
+                width: 70%;
+                font-size: 11px;
+                margin: 2px auto;
+                .titre-info {
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+/* #################### Responsive du section Enigme ###########################*/
+@media (max-width: 800px) {
+    .main-enigme {
+        margin-top: 25%;
+        .entete {
+            text-decoration: underline;
+            letter-spacing: 0.25em;
+            line-height: 50px;
+        }
+        .content-enigme {
+            display: block;
+            align-items: center;
+            margin-bottom: 150px;
+            .info-enigme {
+                background-image: url("../../../image/Enigme/Pantherenigme2.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                height: 385px;
+                width: 600px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                p {
+                    width: 90%;
+                    font-size: 11px;
+                    margin: 2px auto;
+                    .titre-info {
+                        display: block;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+.alphabet span {
+    font-family: "Wakanda Forever" !important;
+}
+
+.transcription {
+    width: 500px;
+    .panthera-letter {
+        font-family: "Wakanda Forever";
+        font-size: 28px;
+        color: $purple;
+        line-height: 40px;
+    }
+    form {
+        margin-top: 50px;
+        input[type=text] {
+            width: 520px;
+            height: 56px;
+            border: 1px solid $purple;
+            border-radius: 38px;
+            padding-left: 30px;
+            margin: 20px 0px;
+            background-color: #ffffff00;
+            color: $white;
+        }
+        .btn-enigme {
+            margin-left: 180px;
+            margin-top: 50px;
+            &:hover {
+                filter: drop-shadow(0 0 20px $white);
+            }
+        }
+    }
+}
+.btn-form {
+    font-family: "cantarell";
+    font-style: bold;
+    width: 174px;
+    height: 54px;
+    border-radius: 38px;
+    color: $purple;
+    border: 0;
+    background-color: $white;
+}   
+.box-popup {
+    position: fixed;
+    top: 25%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background: linear-gradient(to bottom, $bleu_hover 10%, $bleu_deep2 100%);
+    z-index: 11111;
+    .popup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 80%;
+        border-radius: 25px;
+        background: linear-gradient(to bottom, $grey 30%, $bleu_hover 100%);
+        p {
+            text-align: center;
+            color: $bleu;
+            top: 2%;
+            text-transform: uppercase;
+            font-family: "Cantarell";
+            font-size: 20px;
+        }
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $white;
+            background-color: $purple;
+            border-radius: 25px;
+            padding: 2% 2%;
+            margin: 4% 0%;
+            &:hover{
+                filter: drop-shadow(0 0 20px $white);
+            }
+        }
+        .chrono {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                width: 70px;
+                position: relative;
+                left: 10%;
+                bottom: 4%;
+            }
+            #hour {
+                display: inline;
+                text-align: center;
+                color: $red;
+            }
+        }
+    }
+}
