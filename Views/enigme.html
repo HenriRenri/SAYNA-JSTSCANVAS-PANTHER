@@ -9,17 +9,16 @@
     <link rel="stylesheet" href="../Publics/css/bootstrap/bootstrap.min.css.map">
     <link rel="stylesheet" href="../Publics/css/style/layout/enigme.css">
 </head>
-<!-- <img src="../Publics/image/Logo/logo_souris_BP1_blanc.png" alt="" id="curseur"> -->
-        <!-- popup box -->
+        <!-- popup box !-->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 box-popup" id="box-popup">
-                <div class="popup">
-                    <p id="titre_popup">félicitation vous avez réléver le défie ! </p>
-                    <a id="btn-popup"> Revenir à l'accueil</a>
-                    <div class="chrono" id="chrono">
+            <div class="col-md-12 pop_box" id="pop_box">
+                <div class="Pop">
+                    <p id="Message">félicitation vous avez réléver le défie ! </p>
+                    <a id="Btn_message"> Page d'accueil</a>
+                    <div class="Time" id="Time">
                         <img src="../Publics/image/Enigme/figma_logo.svg" alt="figma">
-                        <p>Coming soon <span id="hour">00:00:04</span></p>
+                        <p>Coming soon <span id="Heur">00:00:04</span></p>
                     </div>
                 </div>
             </div>
@@ -56,10 +55,14 @@
             <div class="ligne_logo">
                 <div class="ligne"></div>
                 <div class="icon_social">
-                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html" target="_blank"><i class="fab ico fa-facebook"></i> </a>
-                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html" target="_blank"><i class="fab ico fa-instagram"></i></a>
-                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html" target="_blank"><i class="fab ico fa-twitter"></i></a>
-                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html" target="_blank"><img class="ico" src="../Publics/image/Logo/icon_tik_tok.png" alt="logo tikto"></a>
+                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html" target="_blank">
+                        <i class="fab ico fa-facebook"></i> </a>
+                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html" target="_blank">
+                        <i class="fab ico fa-instagram"></i></a>
+                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html" target="_blank">
+                        <i class="fab ico fa-twitter"></i></a>
+                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html" target="_blank">
+                        <img class="ico" src="../Publics/image/Logo/icon_tik_tok.png" alt="logo tikto"></a>
                 </div>
             </div>
         </section>
@@ -91,30 +94,53 @@
             </div>
             <!-- ###################### Section Enigme ######################"" -->
             <section id="enigme">
-                <div class="main-enigme">
-                    <h2 class="entete" id="number_enigme"> ENIGME NUMERO i</h2>
-                    <div class="content-enigme">
+                <div class="enigme">
+                    <h2 class="titre" id="enigme_type"> enigme numero i</h2>
+                    <div class="contenue_enigme">
                         <div class="transcription">
-                            <p id="enonce">
-                                Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais, et apprend par la même occasion la première valeur d’ une Dora Milaje!
+                            <p id="Sujet">Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en 
+                                Wakandais, et apprend par la même occasion la première valeur d’ une Dora Milaje!
                             </p>
-                            <p id="enigme-text">
-                                <span class="panthera-letter"> " SI JE SUIS FIDELE C’EST A CE TRONE PEU IMPORTE QUI MONTE DESSUS "</span>
+                            <p>
+                                <span class="panthera-letter">" SI JE SUIS FIDELE C’EST A CE TRONE PEU IMPORTE QUI MONTE DESSUS "</span>
                             </p>
-                            <form action="" id="enigme-form">
+                            <form action="" id="form_enigme">
                                 <label for="reponse">Alors, as tu la réponse ?</label> <br>
                                 <input type="text" name="reponse" id="reponse" placeholder="Réponse"> <br>
                                 <input type="submit" value="ENVOYER" class="btn-form btn-enigme">
                             </form>
                         </div>
-                        <div class="info-enigme">
+                        <div class="info_enigme">
                             <p>
-                                <span class="titre-info">Le savais tu ? </span>
+                                <span>Le savais tu ? </span>
                                 <p id="a_savoir">
                                     <span>Voici la transicription de l’alphabet :</span> <br>
                                     <span class="alphabet">
-                                        A = <span> A </span> ; B = <span> B </span>; C = <span> C </span> ; D = <span> D </span> ; E = <span> E </span> ; F = <span> F </span> ; G = <span> G </span> ; H = <span> H </span> ;
-                                    I = <span> I </span> ; J = <span> J </span> ; K = <span> K </span> ; L = <span> L </span> ; M = <span> M </span> ; N = <span> N </span> ; O = <span> O </span> ; P = <span> P </span> ; Q = <span> Q </span> ; R = <span> R </span>                                ; S = <span> S </span> ; T =<span> T </span>; U = <span> U </span> ; W = <span> W </span> ; X = <span> X </span> ; Y = <span> Y </span> ; Z = <span> Z </span>
+                                        A = <span> A </span>;
+                                        B = <span> B </span>;
+                                        C = <span> C </span>;
+                                        D = <span> D </span>;
+                                        E = <span> E </span>;
+                                        F = <span> F </span>;
+                                        G = <span> G </span>;
+                                        H = <span> H </span>;
+                                        I = <span> I </span>;
+                                        J = <span> J </span>;
+                                        K = <span> K </span>;
+                                        L = <span> L </span>;
+                                        M = <span> M </span>;
+                                        N = <span> N </span>;
+                                        O = <span> O </span>;
+                                        P = <span> P </span>;
+                                        Q = <span> Q </span>;
+                                        R = <span> R </span>;
+                                        S = <span> S </span>;
+                                        T = <span> T </span>;
+                                        U = <span> U </span>;
+                                        W = <span> W </span>;
+                                        X = <span> X </span>;
+                                        Y = <span> Y </span>;
+                                        Z = <span> Z </span>
                                     </span>
                                 </p>
                             </p>
